@@ -25,6 +25,15 @@ scissors = '''
 ---.__(___)
 '''
 
+gun = '''
+    _______
+---'   ____)______________
+          ________________)
+      (_________________)
+      (____)
+---.__(___)
+'''
+
 #Write your code below this line 👇
 
 import random
@@ -35,9 +44,9 @@ import random
 
 playerInput = int(input("Rock Paper or Scissors?\n1 for Rock, 2 for Paper and 3 for Scissors\n"))
 
-computerInput = random.randint(1,3)
+computerInput = random.randint(1,4)
 
-fistList = [rock, paper, scissors]
+fistList = [rock, paper, scissors, gun]
 
 if playerInput == 1: #Rock
   print("You chose Rock")
@@ -54,6 +63,10 @@ if playerInput == 1: #Rock
     print("Computer chose Scissors")
     print(fistList[computerInput-1])
     print("You win!") #CHANGE
+  elif computerInput == 4: #Gun
+    print("Computer chose GUN!!!")
+    print(fistList[computerInput-1])
+    print("you lose, you always lose")
 
 if playerInput == 2: #Paper
   print("You chose Paper")
@@ -70,6 +83,11 @@ if playerInput == 2: #Paper
     print("Computer chose Scissors")
     print(fistList[computerInput-1])
     print("You Lose, computer wins :/") #CHANGE
+  elif computerInput == 4: #Gun
+    print("Computer chose GUN!!!")
+    print(fistList[computerInput-1])
+    print("you lose, you always lose")
+    
 
 if playerInput == 3: #Scissors
   print("You chose Scissors")
@@ -86,3 +104,7 @@ if playerInput == 3: #Scissors
     print("Computer chose Scissors")
     print(fistList[computerInput-1])
     print("Tie!") #CHANGE
+  elif computerInput == 4: #Gun
+    print("Computer chose GUN!!!")
+    print(fistList[computerInput-1])
+    print("you lose, you always lose")
