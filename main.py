@@ -41,6 +41,7 @@ import random
 # 1 Rock
 # 2 Paper
 # 3 Scissors
+# 4 GUN!!!
 
 playerInput = int(input("Rock Paper or Scissors?\n1 for Rock, 2 for Paper and 3 for Scissors\n"))
 
